@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://miro.medium.com/v2/resize:fit:1080/1*jLYx2zVqsze0P7MqI0X_fA.png");
+    background-size: cover;
+    background-position:bottom;
+}
+.cover-container{
+    max-width: 60vw;
+}
+.nav-link{
+    color: rgba(255,255,255,0.6);
+    border-bottom:0.25rem solid transparent ;
+}
+.nav-link:hover{
+    color: rgba(255,255,255,0.6);
+    border-bottom-color: rgba(255,255,255,0.6);
+}
+.active{
+    border-bottom-color: rgba(255,255,255,0.6);
+    font-weight: 700;
+}
