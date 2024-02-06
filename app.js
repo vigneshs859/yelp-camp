@@ -23,6 +23,7 @@ const localstratergy=require("passport-local");
 const User=require("./models/user");
 const MongoStore = require('connect-mongo')(session);
 const db=mongoose.connection;
+// const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 const dburl=process.env.DB_URL||"mongodb://127.0.0.1:27017/yelp-camp";
 //'mongodb://127.0.0.1:27017/yelp-camp'
 mongoose.connect(dburl)
