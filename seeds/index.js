@@ -45,7 +45,7 @@ const seed=async()=>
            
             description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis consectetur laudantium cupiditate sed illum, repellat, voluptatem debitis incidunt placeat culpa natus, nisi enim saepe est! Consequuntur sunt ipsum laborum.",
             price:Math.floor(Math.random()*20)+10,
-            author:'65b8cee8d2c21e7c8a18bd7e',
+            author:"65bf9a3971b5ac625dc7825f",
             image:[
                 {
                     url:'https://res.cloudinary.com/djj4kggcx/image/upload/v1706886353/yelpcamp/hbdlw2t0cfaol6gq8cje.jpg',
