@@ -8,7 +8,8 @@ const {descriptors,places}=require("./seedHelpers")
 const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 const mapBoxToken = process.env.MAPBOX_TOKEN;
 const geocoder = mbxGeocoding({accessToken: mapBoxToken});
-mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp')
+const dbUrl = process.env.DB_URL ||'mongodb://127.0.0.1:27017/yelp-camp' ;
+mongoose.connect(dbUrl)
 .then((data)=>
 {
     console.log("Connected to the database")
