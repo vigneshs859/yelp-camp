@@ -31,7 +31,7 @@ const seed=async()=>
     await Campground.deleteMany({});
     for(let i=0;i<300;i++)
     {
-        const rand = Math.floor(Math.random() * 1000) + 1;
+        const rand = Math.floor(Math.random() * cities.length) + 1;
         const title=`${randy(descriptors)} ${randy(places)}`;
         const  location=`${cities[rand].city},${cities[rand].state}`;
         const geoData=await geocoder.forwardGeocode(
